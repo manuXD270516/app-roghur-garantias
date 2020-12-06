@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_assurances_history"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_assurances_history" />
+
+    <item
+        android:id="@+id/navigation_activate_assurance"
+        android:icon="@drawable/ic_baseline_check_circle_24"
+        android:title="@string/title_activate_assurance" />
+
+    <item
+        android:id="@+id/navigation_claim_assurance"
+        android:icon="@drawable/ic_claim"
+        android:title="@string/title_claim_assurance" />
+
+    <item
+        android:id="@+id/navigation_clients"
+        android:icon="@drawable/ic_clients"
+        android:title="@string/title_clients" />
+
+    <item
+        android:id="@+id/navigation_users_commerce"
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:title="@string/title_users_commerce" />
+
+</menu>

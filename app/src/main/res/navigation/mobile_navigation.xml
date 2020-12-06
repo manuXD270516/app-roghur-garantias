@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_assurances_history">
+
+    <fragment
+        android:id="@+id/navigation_assurances_history"
+        android:name="com.manueldev.roghurgarantias.ui.assurances_history.AssurancesHistoryFragment"
+        android:label="@string/title_assurances_history"
+        tools:layout="@layout/fragment_assurance_history" />
+
+    <fragment
+        android:id="@+id/navigation_activate_assurance"
+        android:name="com.manueldev.roghurgarantias.ui.activate_assurance.ActivateAssuranceFragment"
+        android:label="@string/title_activate_assurance"
+        tools:layout="@layout/fragment_activate_assurance" />
+
+    <fragment
+        android:id="@+id/navigation_claim_assurance"
+        android:name="com.manueldev.roghurgarantias.ui.claim_assurance.ClaimAssuranceFragment"
+        android:label="@string/title_claim_assurance"
+        tools:layout="@layout/fragment_claim_assurance" />
+
+    <fragment
+        android:id="@+id/navigation_clients"
+        android:name="com.manueldev.roghurgarantias.ui.clients.ClientFragment"
+        android:label="@string/title_clients"
+        tools:layout="@layout/fragment_clients" />
+
+    <fragment
+        android:id="@+id/navigation_users_commerce"
+        android:name="com.manueldev.roghurgarantias.ui.users_commerce.UsersCommerceFragment"
+        android:label="@string/title_users_commerce"
+        tools:layout="@layout/fragment_users_commerce" />
+</navigation>

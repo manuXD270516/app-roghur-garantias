@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Roghur Garantias</string>
+
+    <string name="title_assurances_history">Garantias</string>
+    <string name="title_activate_assurance">Activacion</string>
+    <string name="title_claim_assurance">Reclamos</string>
+    <string name="title_clients">Clientes</string>
+    <string name="title_users_commerce">Mi Cuenta</string>
+
+
+    <string name="hint_inputtext_find_client"><i>Ingrese carnet de Identidad</i></string>
+    <string name="hint_inputtext_code_product_dialog"><i>Codigo de producto. Ej: A123D1</i></string>
+    <string name="hint_inputtext_reason_claim_assurance_dialog"><i>Motivo de activacion de la garantia</i></string>
+    <string name="hint_inputtext_register_account_users_commerce">¿No tienes una cuenta?, <u>Registrate aquí</u></string>
+
+    <string name="shared_preferences_access">com.manueldev.roghurgarantias</string>
+    <string name="sp_login_status">login_status</string>
+    <string name="sp_login_userId">login_user_id</string>
+
+
+
+
+</resources>

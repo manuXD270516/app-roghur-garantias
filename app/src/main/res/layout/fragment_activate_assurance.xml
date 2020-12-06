@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/ll_activate_assurance"
+    android:paddingBottom="?attr/actionBarSize"
+    tools:context=".ui.activate_assurance.ActivateAssuranceFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp"
+                android:text="BUSQUEDA DE CLIENTE"
+                android:textAlignment="center" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <EditText
+                    android:id="@+id/et_client_dni_activate_assurances"
+                    android:layout_width="match_parent"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:drawableTint="@color/colorPrimary"
+                    android:drawableStart="@drawable/ic_baseline_person_24"
+                    android:layout_marginLeft="8dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.2"
+                    android:textSize="14dp"
+                    android:background="@drawable/custom_input"
+                    android:hint="@string/hint_inputtext_find_client"
+                    android:textAlignment="center" />
+
+                <ImageButton
+                    android:id="@+id/btn_find_client_activate_assurance"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/button_rounded"
+                    android:src="@drawable/ic_baseline_search_24"
+                    android:tint="@color/colorWhite" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:animateLayoutChanges="true"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_client_data_activate_assurance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <!-- Media -->
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="130dp"
+                            android:background="@color/colorLightBlue"
+                            android:contentDescription="sdada"
+                            android:scaleType="center"
+                            app:srcCompat="@mipmap/customer"
+                            app:tint="@color/colorAccentBlue" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorAccentBlue"
+                            android:orientation="vertical"
+
+                            android:padding="16dp">
+
+                            <!-- Title, secondary and supporting text -->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.60"
+                                    android:text="Carnet Identidad"
+                                    android:textSize="12dp"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/colorWhite"
+                                    android:textStyle="bold"
+
+
+                                    />
+
+                                <TextView
+                                    android:id="@+id/tv_dni_get_client_activate_assurance"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.5"
+                                    android:text="111111"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorWhite" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.60"
+                                    android:text="Nombre Completo"
+                                    android:textSize="12dp"
+
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/colorWhite"
+                                    android:textStyle="bold"
+
+
+                                    />
+
+                                <TextView
+                                    android:id="@+id/tv_fullname_get_client_activate_assurance"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.5"
+                                    android:text="111111"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorWhite" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp"
+                android:text="BUSQUEDA DE PRODUCTO"
+                android:textAlignment="center" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp"
+                android:weightSum="1">
+
+
+                <ImageButton
+                    android:id="@+id/btn_search_product_by_code_activate_assurance"
+                    android:layout_width="30dp"
+                    android:layout_height="80dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@mipmap/search_literal"
+                    android:tint="@color/colorWhite"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/button_rounded" />
+
+                <ImageButton
+                    android:id="@+id/btn_search_product_by_barcode_activate_assurance"
+                    android:layout_width="20dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/search_barcode"
+                    android:tint="@color/colorWhite"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/button_rounded" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_product_data_activate_assurance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <!-- Media -->
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:background="@color/colorLightBlue"
+                            android:contentDescription="sdada"
+                            android:scaleType="center"
+                            app:srcCompat="@mipmap/product"
+                            app:tint="@color/colorAccentBlue" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorAccentBlue"
+                            android:orientation="vertical"
+
+                            android:padding="16dp">
+
+                            <!-- Title, secondary and supporting text -->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.60"
+                                    android:text="Codigo Articulo"
+                                    android:textSize="12dp"
+
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/colorWhite"
+                                    android:textStyle="bold"
+
+
+                                    />
+
+                                <TextView
+                                    android:id="@+id/tv_code_get_product_active_assurance"
+
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.5"
+                                    android:text="111111"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorWhite" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.60"
+                                    android:text="Producto"
+                                    android:textSize="12dp"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/colorWhite"
+                                    android:textStyle="bold"
+
+
+                                    />
+
+                                <TextView
+                                    android:id="@+id/tv_name_get_product_active_assurance"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.5"
+                                    android:text="111111"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorWhite" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.60"
+                                    android:text="Marca/Modelo"
+                                    android:textSize="12dp"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/colorWhite"
+                                    android:textStyle="bold"
+
+
+                                    />
+
+                                <TextView
+                                    android:id="@+id/tv_mark_get_product_active_assurance"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.5"
+                                    android:text="111111"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorWhite" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.60"
+                                    android:text="dias expiracion"
+                                    android:textSize="12dp"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/colorWhite"
+                                    android:textStyle="bold"
+
+
+                                    />
+
+                                <TextView
+                                    android:id="@+id/tv_days_expiration_get_product_active_assurance"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.5"
+                                    android:text="111111"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorWhite" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_save_activate_assurance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorPrimary"
+                android:fontFamily="sans-serif-medium"
+                android:text="activar garantia"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
